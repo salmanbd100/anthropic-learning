@@ -8,6 +8,7 @@ numbered and runs on its own.
 | Notebook | Covers |
 | --- | --- |
 | `01_client.ipynb` | Client setup, a single request, and a multi-turn chat loop with streamed responses |
+| `02_structured_output.ipynb` | Structured JSON output with a Pydantic model (`messages.parse`) and a raw JSON schema (`output_config`) |
 
 ## Setup
 
@@ -46,3 +47,6 @@ work interactively.
 - The course's `temperature`, `top_p` and `top_k` arguments are left out. The current
   SDK doesn't accept them, so responses are steered through the prompt or
   `output_config={"effort": ...}` instead.
+- The course gets JSON by prefilling the assistant turn and adding stop sequences.
+  Current models reject assistant prefill, so `02_structured_output.ipynb` uses
+  structured outputs instead.
