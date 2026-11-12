@@ -10,7 +10,7 @@ numbered and runs on its own.
 | `01_client.ipynb` | Client setup, a single request, and a multi-turn chat loop with streamed responses |
 | `02_structured_output.ipynb` | Structured JSON output with a Pydantic model (`messages.parse`) and a raw JSON schema (`output_config`) |
 | `03_prompt_evals.ipynb` | Generating an eval dataset with structured output and running a prompt against each test case (grading still a placeholder) |
-| `001_tools_007.ipynb` | Tool use: date and reminder tools, a `batch_tool` for running several tool calls in one request, and a loop that runs tools until Claude stops calling them |
+| `04_tools.ipynb` | Tool use: date and reminder tools, a `batch_tool` for running several tool calls in one request, and a loop that runs tools until Claude stops calling them |
 
 ## Setup
 
